@@ -1,0 +1,24 @@
+Body {
+  margin: 0;
+  padding: 0;
+}
+
+.background-image {
+  background: url("../src/wood.jpg");
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: -1;
+}
+
+.footer {
+  background: #66838C;
+  height: 60px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.header {
+  color: #fff;
+}
