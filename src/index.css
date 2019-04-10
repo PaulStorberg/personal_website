@@ -20,51 +20,115 @@ Body {
   overflow: scroll;
 }
 .overlay-container {
-  /* height: 500px; */
   width: 100%;
+}
+
+/* TOP LINKS ===================================================================*/
+.top-links-container {
+  position: absolute;
+  top: 10px;
+}
+.link-top {
+  display: inline-block;
+}
+.linkedin-top, .github-top {
+  color: #D0C8B4;
+  font-size: 16px;
+  text-decoration: none;
+  text-shadow: 4px 4px 4px black;
+}
+.linkedin-top {
+  left: 30px;
+  position: absolute;
+}
+.github-top {
+  right: 30px;
+  position: absolute;
 }
 
 /* JUMBOTRON ===================================================================*/
 .jumbotron {
+  line-height: 60px;
   letter-spacing: 4px;
-  margin: 250px 0 250px 0;
+  margin: 290px 0 280px 0;
+  text-shadow: 4px 4px 4px black;
 }
 .jumbotron-name {
-  font-size: 28px;
+  font-size: 52px;
 }
 .jumbotron-title {
-  font-size: 20px;
+  font-size: 28px;
+  text-decoration: overline;
 }
 
 /* PORTFOLIO ===================================================================*/
 .portfolio-container {
-
+  background-color: #D0C8B4;
+  box-shadow: 0px 10px 6px black;
+  -webkit-box-shadow: 0px 10px 6px black;
+  -moz-box-shadow: 0px 10px 6px black;
+  height: 500px;
+  position: relative;
 }
-
+.card {
+  margin: 20px 30px 20px 30px;
+  text-align: left;
+  width: 30%;
+  color: white;
+}
+.retalent {
+  position: absolute;
+  left: 100px;
+  top: 10px;
+}
+.pokersprout {
+  position: absolute;
+  right: 100px;
+  top: 10px;
+}
+.retalent-link, .pokersprout-link {
+  color: white;
+  font-size: 20px;
+  line-height: 20px;
+  text-decoration: none;
+}
 /* CONTACT =====================================================================*/
 .contact-container {
-
+  height: 200px;
+  margin: 140px 0 30px 0;
+  text-shadow: 4px 4px 4px black;
+}
+.contact-info {
+  font-size: 18px;
+  line-height: 30px;
+}
+.email-link {
+  text-decoration: none;
+  color: #D0C8B4;
 }
 
 /* LINKS =======================================================================*/
 .links-container {
   background-color: #D0C8B4;
-  box-shadow: 0px 10px 40px #D0C8B4;
-  -webkit-box-shadow: 0px 10px 40px #D0C8B4;
-  -moz-box-shadow: 0px 10px 40px #D0C8B4;
+  box-shadow: 0px 10px 6px black;
+  -webkit-box-shadow: 0px 10px 6px black;
+  -moz-box-shadow: 0px 10px 6px black;
   bottom: 0;
   height: 150px;
-  position: absolute;
 }
-.link {
+.link-bottom {
   display: inline-block;
   margin: 60px 20px;
 }
-.linkedin, .github {
-  color: white;
+.linkedin-bottom, .github-bottom {
+  color: #F3F1EC;
   font-size: 20px;
   text-decoration: none;
 }
 
+/* SHARED STYLES ===============================================================*/
+.link:hover {
+  text-decoration: underline;
+}
 
 /*==============================================================================*/
