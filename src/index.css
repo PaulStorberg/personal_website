@@ -1,24 +1,70 @@
+/* GLOBAL ======================================================================*/
 Body {
+  color: #D0C8B4;
+  font-family: sans-serif;
   margin: 0;
   padding: 0;
 }
 
+/* BODY ========================================================================*/
 .background-image {
   background: url("../src/wood.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100%;
-  position: fixed;
+}
+.scroll-container {
+  text-align: center;
+  overflow: scroll;
+}
+.overlay-container {
+  /* height: 500px; */
   width: 100%;
-  z-index: -1;
 }
 
-.footer {
-  background: #66838C;
-  height: 60px;
-  width: 100%;
-  position: absolute;
+/* JUMBOTRON ===================================================================*/
+.jumbotron {
+  letter-spacing: 4px;
+  margin: 250px 0 250px 0;
+}
+.jumbotron-name {
+  font-size: 28px;
+}
+.jumbotron-title {
+  font-size: 20px;
+}
+
+/* PORTFOLIO ===================================================================*/
+.portfolio-container {
+
+}
+
+/* CONTACT =====================================================================*/
+.contact-container {
+
+}
+
+/* LINKS =======================================================================*/
+.links-container {
+  background-color: #D0C8B4;
+  box-shadow: 0px 10px 40px #D0C8B4;
+  -webkit-box-shadow: 0px 10px 40px #D0C8B4;
+  -moz-box-shadow: 0px 10px 40px #D0C8B4;
   bottom: 0;
+  height: 150px;
+  position: absolute;
+}
+.link {
+  display: inline-block;
+  margin: 60px 20px;
+}
+.linkedin, .github {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
 }
 
-.header {
-  color: #fff;
-}
+
+/*==============================================================================*/
