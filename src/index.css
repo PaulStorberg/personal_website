@@ -23,6 +23,11 @@ Body {
   width: 100%;
 }
 
+/* SHARED STYLES ===============================================================*/
+.link:hover {
+  text-decoration: underline;
+}
+
 /* TOP LINKS ===================================================================*/
 .top-links-container {
   position: absolute;
@@ -48,53 +53,44 @@ Body {
 
 /* JUMBOTRON ===================================================================*/
 .jumbotron {
+  background-color: rgba(0, 0, 0, 0.0);
   line-height: 60px;
   letter-spacing: 4px;
-  margin: 290px 0 280px 0;
+  margin: 270px 0 270px 0;
   text-shadow: 4px 4px 4px black;
 }
 .jumbotron-name {
   font-size: 52px;
 }
 .jumbotron-title {
+  margin: 0 auto;
+  width: 500px;
   font-size: 28px;
-  text-decoration: overline;
+  border-top: 2px solid #D0C8B4;
 }
 
 /* PORTFOLIO ===================================================================*/
-.portfolio-container {
-  background-color: #D0C8B4;
+.section-title {
+  font-size: 26px;
+  margin-bottom: 30px;
+  text-shadow: 4px 4px 4px black;
+}
+.card-columns {
+  column-count: 2;
+}
+.card {
   box-shadow: 0px 10px 6px black;
   -webkit-box-shadow: 0px 10px 6px black;
   -moz-box-shadow: 0px 10px 6px black;
-  height: 500px;
-  position: relative;
 }
-.card {
-  margin: 20px 30px 20px 30px;
-  text-align: left;
-  width: 30%;
-  color: white;
-}
-.retalent {
-  position: absolute;
-  left: 100px;
-  top: 10px;
-}
-.pokersprout {
-  position: absolute;
-  right: 100px;
-  top: 10px;
-}
-.retalent-link, .pokersprout-link {
-  color: white;
+.pokersprout-link, .retalent-link {
+  color: #151312;
   font-size: 20px;
   line-height: 20px;
   text-decoration: none;
 }
-.retalent-image, .pokersprout-image {
-  height: 200px;
-  width: 320px;
+.card-text {
+  color: #504E4D;
 }
 /* CONTACT =====================================================================*/
 .contact-container {
@@ -125,45 +121,24 @@ Body {
   margin: 60px 20px;
 }
 .linkedin-bottom, .github-bottom {
-  color: #F3F1EC;
+  color: black;
   font-size: 20px;
   text-decoration: none;
 }
 
-/* SHARED STYLES ===============================================================*/
-.link:hover {
-  text-decoration: underline;
-}
-
 /* MEDIA =======================================================================*/
 @media (max-width: 890px) {
-  .portfolio-container {
-    height: 600px;
-    text-align: center;
+  .card-columns {
+    column-count: 1;
   }
-  .portfolio-info {
-    display: none;
-  }
-  .card {
-    margin-left: calc(50% - 160px);
-    text-align: center;
-    color: white;
-  }
-  .retalent {
-    position: relative;
-  }
-  .pokersprout {
-    position: relative;
-  }
-  .retalent-link, .pokersprout-link {
-    color: white;
-    font-size: 20px;
-    line-height: 20px;
-    text-decoration: none;
-  }
-  .retalent-image, .pokersprout-image {
-    height: 200px;
-    width: 320px;
+}
+
+@media (max-width: 574px) {
+  .jumbotron-title {
+    margin: 0;
+    width: 100%;
+    font-size: 28px;
+    border-top: 2px solid #D0C8B4;
   }
 }
 

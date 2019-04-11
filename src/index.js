@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'bootstrap/dist/css/bootstrap.css';
 import './index.css';
 
 class Body extends React.Component {
@@ -23,17 +24,24 @@ class Body extends React.Component {
             <div className="jumbotron-title"> Front-end Web Developer </div>
           </div>
 
-          <div className="overlay-container portfolio-container">
-            <div className="retalent card">
-              <a className="retalent-link link" href="https://www.retalent.io">Retalent</a>
-              <img className="retalent-image" src={require("../src/retalent-image.png")} />
-              <div className="portfolio-info">Retalent uses realistic simulations to measure behavioral traits of employees to build high performer profiles. Incoming candidates will take the same simulation right after applying, and their results will be compared to the high performer profiles to get their "fit score." Recruiters use the fit score to prioritize candidates and screen more efficiently and effectively before bringing candidates on-site.</div>
-            </div>
+          <div className="overlay-container portfolio-container container">
+            <div className="section-title">Portfolio</div>
+            <div class="card-columns">
+              <div class="card">
+                <img class="card-img-top" src={require("../src/pokersprout-image.png")} alt="Card image cap" />
+                <div class="card-body">
+                  <h5 class="card-title"><a className="pokersprout-link link" href="https://www.pokersprout.com">PokerSprout</a></h5>
+                  <p class="card-text">PokerSprout is a learning management system which provides a range of courses for aspiring poker players. The courses range in difficulty level and are taught through interactive videos and follow-up tests.</p>
+                </div>
+              </div>
 
-            <div className="pokersprout card">
-              <a className="pokersprout-link link" href="https://www.pokersprout.com">PokerSprout</a>
-              <img className="pokersprout-image" src={require("../src/pokersprout-image.png")} />
-              <div className="portfolio-info">PokerSprout is a learning management system which provides a range of courses for aspiring poker players. The courses range in difficulty level and are taught through interactive videos and follow-up tests.</div>
+              <div class="card">
+                <img class="card-img-top" src={require("../src/retalent-image.png")} alt="Card image cap" />
+                <div class="card-body">
+                  <h5 class="card-title"><a className="retalent-link link" href="https://www.retalent.io">Retalent</a></h5>
+                  <p class="card-text">Retalent uses realistic simulations to measure behavioral traits of employees to build high performer profiles. Incoming candidates will take the same simulation right after applying, and their results will be compared to the high performer profiles to get their "fit score." Recruiters use the fit score to prioritize candidates and screen more efficiently and effectively before bringing candidates on-site.</p>
+                </div>
+              </div>
             </div>
           </div>
 
