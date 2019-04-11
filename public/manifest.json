@@ -1,5 +1,6 @@
 {
   "short_name": "Paul Storberg",
   "name": "Paul Storbergs Website",
+  "start_url": "personal_website",
   "display": "standalone"
 }
