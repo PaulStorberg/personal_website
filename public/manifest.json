@@ -1,11 +1,6 @@
 {
-  "homepage": "https://paulstorberg.github.io/personal_website/",
   "short_name": "Paul Storberg",
   "name": "Paul Storbergs Website",
   "start_url": "personal_website",
-  "display": "standalone",
-  "scripts": {
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
-}
+  "display": "standalone"
 }
