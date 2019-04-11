@@ -92,6 +92,10 @@ Body {
   line-height: 20px;
   text-decoration: none;
 }
+.retalent-image, .pokersprout-image {
+  height: 200px;
+  width: 320px;
+}
 /* CONTACT =====================================================================*/
 .contact-container {
   height: 200px;
@@ -129,6 +133,38 @@ Body {
 /* SHARED STYLES ===============================================================*/
 .link:hover {
   text-decoration: underline;
+}
+
+/* MEDIA =======================================================================*/
+@media (max-width: 890px) {
+  .portfolio-container {
+    height: 600px;
+    text-align: center;
+  }
+  .portfolio-info {
+    display: none;
+  }
+  .card {
+    margin-left: calc(50% - 160px);
+    text-align: center;
+    color: white;
+  }
+  .retalent {
+    position: relative;
+  }
+  .pokersprout {
+    position: relative;
+  }
+  .retalent-link, .pokersprout-link {
+    color: white;
+    font-size: 20px;
+    line-height: 20px;
+    text-decoration: none;
+  }
+  .retalent-image, .pokersprout-image {
+    height: 200px;
+    width: 320px;
+  }
 }
 
 /*==============================================================================*/
