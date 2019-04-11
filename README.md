@@ -1,3 +1,3 @@
-<!-- This is a React app for Paul Storbergs personal website.
+This is a React app for Paul Storbergs personal website.
 
-paulstorberg.com -->
+paulstorberg.com
