@@ -13,10 +13,10 @@ class Body extends React.Component {
 
           <div className="overlay-container top-links-container">
             <div className="link-top">
-              <a className="linkedin-top link" href="https://www.linkedin.com/in/PaulStorberg">LinkedIn</a>
+              <a className="linkedin-top link" href="https://www.linkedin.com/in/PaulStorberg"><i class="fab fa-linkedin"></i></a>
             </div>
             <div className="link-top">
-              <a className="github-top link" href="https://github.com/PaulStorberg">GitHub</a>
+              <a className="github-top link" href="https://github.com/PaulStorberg"><i class="fab fa-github-square"></i></a>
             </div>
           </div>
 
@@ -48,7 +48,7 @@ class Body extends React.Component {
 
           <div className="overlay-container contact-container">
             <div>
-              <div className="contact-info">Please email for any inquires:</div>
+              <div className="contact-info">Please email for any inquiries:</div>
               <a className="contact-info email-link link" href="mailto:paul@storberg.net?Subject=Inquire">Paul@Storberg.net</a>
             </div>
           </div>
