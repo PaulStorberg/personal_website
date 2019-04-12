@@ -132,13 +132,24 @@ Body {
     column-count: 1;
   }
 }
-
-@media (max-width: 574px) {
+@media (max-width: 577px) {
+  .jumbotron {
+    margin: 200px 0 200px 0;
+  }
   .jumbotron-title {
-    margin: 0;
     width: 100%;
-    font-size: 28px;
-    border-top: 2px solid #D0C8B4;
+  }
+}
+@media (max-width: 449px) {
+  .jumbotron {
+    line-height: 40px;
+    margin: 190px 0 190px 0;
+  }
+  .jumbotron-name {
+    font-size: 30px;
+  }
+  .jumbotron-title {
+    font-size: 20px;
   }
 }
 
