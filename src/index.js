@@ -7,6 +7,30 @@ import './index.css';
 class Body extends React.Component {
   render() {
 
+    const portfolioArray = [
+      {src: require("../src/pokersprout-image.png"),
+       href: "https://www.pokersprout.com",
+       title: "PokerSprout",
+       text: "PokerSprout is a learning management system which provides a range of courses for aspiring poker players. The courses range in difficulty level and are taught through interactive videos and follow-up tests."},
+
+      {src: require("../src/retalent-image.png"),
+       href: "https://www.retalent.io",
+       title: "Retalent",
+       text: "Retalent uses realistic simulations to measure behavioral traits of employees to build high performer profiles. Incoming candidates will take the same simulation right after applying, and their results will be compared to the high performer profiles to get their 'fit score.' Recruiters use the fit score to prioritize candidates and screen more efficiently and effectively before bringing candidates on-site."}
+    ];
+
+    const portfolioCards = portfolioArray.map(card => {
+      return (
+        <div className="card" key={card.title}>
+          <img className="card-img-top" src={card.src} alt="Image Not Working at This Time" />
+          <div className="card-body">
+            <h5 className="card-title"><a className="portfolio-link link" href={card.href}>{card.title}</a></h5>
+            <p className="card-text">{card.text}</p>
+          </div>
+        </div>
+      )
+    });
+
     return (
       <div className="background-image">
         <div className="scroll-container">
@@ -28,21 +52,7 @@ class Body extends React.Component {
           <div className="overlay-container portfolio-container container">
             <div className="section-title">Portfolio</div>
             <div className="card-columns">
-              <div className="card">
-                <img className="card-img-top" src={require("../src/pokersprout-image.png")} alt="Card image cap" />
-                <div className="card-body">
-                  <h5 className="card-title"><a className="pokersprout-link link" href="https://www.pokersprout.com">PokerSprout</a></h5>
-                  <p className="card-text">PokerSprout is a learning management system which provides a range of courses for aspiring poker players. The courses range in difficulty level and are taught through interactive videos and follow-up tests.</p>
-                </div>
-              </div>
-
-              <div className="card">
-                <img className="card-img-top" src={require("../src/retalent-image.png")} alt="Card image cap" />
-                <div className="card-body">
-                  <h5 className="card-title"><a className="retalent-link link" href="https://www.retalent.io">Retalent</a></h5>
-                  <p className="card-text">Retalent uses realistic simulations to measure behavioral traits of employees to build high performer profiles. Incoming candidates will take the same simulation right after applying, and their results will be compared to the high performer profiles to get their "fit score." Recruiters use the fit score to prioritize candidates and screen more efficiently and effectively before bringing candidates on-site.</p>
-                </div>
-              </div>
+              {portfolioCards}
             </div>
           </div>
 
@@ -56,6 +66,9 @@ class Body extends React.Component {
           <div className="overlay-container links-container">
             <div className="link-bottom">
               <a className="linkedin-bottom link" href="https://www.linkedin.com/in/PaulStorberg">LinkedIn</a>
+            </div>
+            <div className="link-bottom">
+              <a className="upwork-bottom link" href="https://www.upwork.com/o/profiles/users/_~010d7a419385669325/">UpWork</a>
             </div>
             <div className="link-bottom">
               <a className="github-bottom link" href="https://github.com/PaulStorberg">GitHub</a>

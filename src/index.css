@@ -83,7 +83,7 @@ Body {
   -webkit-box-shadow: 0px 10px 6px black;
   -moz-box-shadow: 0px 10px 6px black;
 }
-.pokersprout-link, .retalent-link {
+.portfolio-link {
   color: #151312;
   font-size: 20px;
   line-height: 20px;
@@ -120,7 +120,7 @@ Body {
   display: inline-block;
   margin: 60px 20px;
 }
-.linkedin-bottom, .github-bottom {
+.linkedin-bottom, .github-bottom, .upwork-bottom {
   color: black;
   font-size: 20px;
   text-decoration: none;
