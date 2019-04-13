@@ -2,22 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import portfolio from "./portfolio"
 import './index.css';
 
 class Body extends React.Component {
   render() {
 
-    const portfolioArray = [
-      {src: require("../src/pokersprout-image.png"),
-       href: "https://www.pokersprout.com",
-       title: "PokerSprout",
-       text: "PokerSprout is a learning management system which provides a range of courses for aspiring poker players. The courses range in difficulty level and are taught through interactive videos and follow-up tests."},
-
-      {src: require("../src/retalent-image.png"),
-       href: "https://www.retalent.io",
-       title: "Retalent",
-       text: "Retalent uses realistic simulations to measure behavioral traits of employees to build high performer profiles. Incoming candidates will take the same simulation right after applying, and their results will be compared to the high performer profiles to get their 'fit score.' Recruiters use the fit score to prioritize candidates and screen more efficiently and effectively before bringing candidates on-site."}
-    ];
+    const portfolioArray = this.props.data;
 
     const portfolioCards = portfolioArray.map(card => {
       return (
@@ -37,10 +28,10 @@ class Body extends React.Component {
 
           <div className="overlay-container top-links-container">
             <div className="link-top">
-              <a className="linkedin-top link" href="https://www.linkedin.com/in/PaulStorberg"><i class="fab fa-linkedin"></i></a>
+              <a className="linkedin-top link" href="https://www.linkedin.com/in/PaulStorberg"><i className="fab fa-linkedin"></i></a>
             </div>
             <div className="link-top">
-              <a className="github-top link" href="https://github.com/PaulStorberg"><i class="fab fa-github-square"></i></a>
+              <a className="github-top link" href="https://github.com/PaulStorberg"><i className="fab fa-github-square"></i></a>
             </div>
           </div>
 
@@ -84,6 +75,6 @@ class Body extends React.Component {
 // =============================================================================
 
 ReactDOM.render(
-  <Body />,
+  <Body data={portfolio} />,
   document.getElementById('root')
 );
