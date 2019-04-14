@@ -94,17 +94,34 @@ Body {
 }
 /* CONTACT =====================================================================*/
 .contact-container {
-  height: 200px;
-  margin: 140px 0 30px 0;
-  text-shadow: 4px 4px 4px black;
+  margin: 60px 0 60px 0;
 }
-.contact-info {
-  font-size: 18px;
-  line-height: 30px;
+.form-layout {
+  background-color: #D0C8B4;
+  border-radius: 0.25rem;
+  box-shadow: 0px 10px 6px black;
+  -webkit-box-shadow: 0px 10px 6px black;
+  -moz-box-shadow: 0px 10px 6px black;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 500px;
 }
-.email-link {
-  text-decoration: none;
-  color: #D0C8B4;
+.form-title {
+  color: #504E4D;
+}
+.form-text {
+  border: none;
+  border-radius: 0.25rem;
+  margin-top: 10px !important;
+  margin: 0 auto;
+  padding-left: 5px;
+  width: 90%;
+}
+.form-submit {
+  color: #504E4D;
+  background-color: white;
+  border-radius: 0.25rem;
+  margin-top: 10px !important;
 }
 
 /* LINKS =======================================================================*/
@@ -140,6 +157,11 @@ Body {
     width: 100%;
   }
 }
+@media (max-width: 519px) {
+  .form-layout {
+    margin: 10px;
+  }
+}
 @media (max-width: 449px) {
   .jumbotron {
     line-height: 40px;
@@ -150,6 +172,27 @@ Body {
   }
   .jumbotron-title {
     font-size: 20px;
+  }
+}
+@media (max-width: 331px) {
+  .linkedin-bottom, .github-bottom, .upwork-bottom {
+    font-size: 16px;
+  }
+}
+@media (max-width: 291px) {
+  .linkedin-bottom, .github-bottom, .upwork-bottom {
+    font-size: 14px;
+  }
+}
+@media (max-width: 269px) {
+  .links-container {
+    height: 50px;
+  }
+  .link-bottom {
+    margin: 10px;
+  }
+  .linkedin-bottom, .github-bottom, .upwork-bottom {
+    font-size: 12px;
   }
 }
 

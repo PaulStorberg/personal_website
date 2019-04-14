@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import portfolio from "./portfolio"
 import './index.css';
 
@@ -48,10 +47,14 @@ class Body extends React.Component {
           </div>
 
           <div className="overlay-container contact-container">
-            <div>
-              <div className="contact-info">Please email for any inquiries:</div>
-              <a className="contact-info email-link link" href="mailto:paul@storberg.net?Subject=Inquire">Paul@Storberg.net</a>
-            </div>
+            <form className="form-layout" action="https://formspree.io/paul@storberg.net" method="POST" >
+              <div className="form-title">Project inquiries</div>
+              <input className="form-text" type="text" name="name" placeholder="Name" />
+              <input className="form-text" type="text" name="email" placeholder="Email" />
+              <input className="form-text" type="text" name="budget" placeholder="Budget" />
+              <textarea className="form-text" type="text" rows="3" name="outline" placeholder="Project Outline" />
+              <button className="form-submit" action="submit">submit</button>
+            </form>
           </div>
 
           <div className="overlay-container links-container">
