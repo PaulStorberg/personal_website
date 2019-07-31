@@ -36,7 +36,7 @@ class Body extends React.Component {
 
           <div className="overlay-container jumbotron">
             <div className="jumbotron-name"> Paul J Storberg </div>
-            <div className="jumbotron-title"> Front-end Web Developer </div>
+            <div className="jumbotron-title"> Software Engineer </div>
           </div>
 
           <div className="overlay-container portfolio-container container">
