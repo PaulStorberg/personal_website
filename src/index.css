@@ -1,54 +1,52 @@
 /* GLOBAL ======================================================================*/
-Body {
-  color: #D0C8B4;
-  font-family: sans-serif;
-  margin: 0;
+html, #root, body {
+  height: 100%;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
   padding: 0;
+  width: 100%;
+  margin: 0 auto;
 }
 
 /* BODY ========================================================================*/
 .background-image {
-  background: url("../src/wood.jpg");
+  background: linear-gradient(white, black);
   background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 100%;
 }
 .scroll-container {
   text-align: center;
   overflow: scroll;
 }
-.overlay-container {
-  width: 100%;
-}
 
 /* SHARED STYLES ===============================================================*/
 .link:hover {
   text-decoration: underline;
 }
+.margin-center {
+  padding: 0;
+  margin: 0 auto;
+}
 
 /* TOP LINKS ===================================================================*/
-.top-links-container {
-  position: absolute;
-  top: 10px;
-}
 .link-top {
   display: inline-block;
+  margin-top: 6px;
 }
-.linkedin-top, .github-top {
-  color: #D0C8B4;
-  font-size: 30px;
+.link {
+  color: black;
+  font-size: 16px;
   text-decoration: none;
-  text-shadow: 4px 4px 4px black;
 }
-.linkedin-top {
-  left: 30px;
-  position: absolute;
+.link a {
+  color: black;
+  text-decoration: none;
+  
 }
-.github-top {
-  right: 30px;
-  position: absolute;
+.link a:hover {
+  color: black;
+  text-decoration: none;
 }
 
 /* JUMBOTRON ===================================================================*/
@@ -56,52 +54,41 @@ Body {
   background-color: rgba(0, 0, 0, 0.0);
   line-height: 60px;
   letter-spacing: 4px;
-  margin: 270px 0 270px 0;
-  text-shadow: 4px 4px 4px black;
+  overflow: hidden;
+  transition: all 1s;
+  margin-top: 5%;
+}
+.jumbotron-slide {
+  margin-top: 30%;
+  transition: all 1s;
 }
 .jumbotron-name {
-  font-size: 52px;
+  font-size: 44px;
 }
 .jumbotron-title {
   margin: 0 auto;
-  width: 500px;
-  font-size: 28px;
-  border-top: 2px solid #D0C8B4;
+  max-width: 500px;
+  font-size: 24px;
+  border-top: 2px solid #dddddd;
 }
 
-/* PORTFOLIO ===================================================================*/
-.section-title {
-  font-size: 26px;
-  margin-bottom: 30px;
-  text-shadow: 4px 4px 4px black;
-}
-.card-columns {
-  column-count: 2;
-}
-.card {
-  box-shadow: 0px 10px 6px black;
-  -webkit-box-shadow: 0px 10px 6px black;
-  -moz-box-shadow: 0px 10px 6px black;
-}
-.portfolio-link {
-  color: #151312;
-  font-size: 20px;
-  line-height: 20px;
-  text-decoration: none;
-}
-.card-text {
-  color: #504E4D;
-}
 /* CONTACT =====================================================================*/
 .contact-container {
-  margin: 60px 0 60px 0;
+  position: absolute;
+  height: 40%;
+  top: 40%;
+  overflow: hidden !important;
+  transition: all 1s;
+  width: 100%;
+  left: 0;
+}
+.active-form {
+  top: 100%;
+  height: 0;
 }
 .form-layout {
-  background-color: #D0C8B4;
+  background-color: #dddddd;
   border-radius: 0.25rem;
-  box-shadow: 0px 10px 6px black;
-  -webkit-box-shadow: 0px 10px 6px black;
-  -moz-box-shadow: 0px 10px 6px black;
   padding: 20px;
   margin: 0 auto;
   max-width: 500px;
@@ -122,78 +109,10 @@ Body {
   background-color: white;
   border-radius: 0.25rem;
   margin-top: 10px !important;
-}
-
-/* LINKS =======================================================================*/
-.links-container {
-  background-color: #D0C8B4;
-  box-shadow: 0px 10px 6px black;
-  -webkit-box-shadow: 0px 10px 6px black;
-  -moz-box-shadow: 0px 10px 6px black;
-  bottom: 0;
-  height: 150px;
-}
-.link-bottom {
-  display: inline-block;
-  margin: 60px 20px;
-}
-.linkedin-bottom, .github-bottom, .upwork-bottom {
-  color: black;
-  font-size: 20px;
-  text-decoration: none;
+  font-size: 0.7em;
 }
 
 /* MEDIA =======================================================================*/
-@media (max-width: 890px) {
-  .card-columns {
-    column-count: 1;
-  }
-}
-@media (max-width: 577px) {
-  .jumbotron {
-    margin: 200px 0 200px 0;
-  }
-  .jumbotron-title {
-    width: 100%;
-  }
-}
-@media (max-width: 519px) {
-  .form-layout {
-    margin: 10px;
-  }
-}
-@media (max-width: 449px) {
-  .jumbotron {
-    line-height: 40px;
-    margin: 190px 0 190px 0;
-  }
-  .jumbotron-name {
-    font-size: 30px;
-  }
-  .jumbotron-title {
-    font-size: 20px;
-  }
-}
-@media (max-width: 331px) {
-  .linkedin-bottom, .github-bottom, .upwork-bottom {
-    font-size: 16px;
-  }
-}
-@media (max-width: 291px) {
-  .linkedin-bottom, .github-bottom, .upwork-bottom {
-    font-size: 14px;
-  }
-}
-@media (max-width: 269px) {
-  .links-container {
-    height: 50px;
-  }
-  .link-bottom {
-    margin: 10px;
-  }
-  .linkedin-bottom, .github-bottom, .upwork-bottom {
-    font-size: 12px;
-  }
-}
+
 
 /*==============================================================================*/
